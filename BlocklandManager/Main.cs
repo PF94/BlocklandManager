@@ -28,11 +28,17 @@ namespace BlocklandManager
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             nameDirectory = folderBrowserDialog.SelectedPath;   // Storing the value in a temporary string.
-            this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
             string curFile = nameDirectory += "/Blockland.exe";
             if (File.Exists(curFile)) // Checks if the folder has the Blockland executable.
             {
-                this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
+                if (File.Exists(nameDirectory += "/glu2d3d.dll")) // Checks if the folder has a certain file only available with v0002 installations.
+                {
+                    MessageBox.Show("This is a Blockland Vanilla installation. Support for Vanilla (v0002) is currently not implemented.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
+                }
             }
             else
             {
