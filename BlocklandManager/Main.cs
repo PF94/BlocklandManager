@@ -32,9 +32,18 @@ namespace BlocklandManager
                 }
                 else
                 {
-                    this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
+                    if (File.Exists(curFile))
+                    {
+                        this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
+                        Debug.WriteLine("Success!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("This is not a Blockland installation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Debug.WriteLine("ERROR - INVALID INSTALLATION");
+                    }
                 }
+            }
             }
         }
     }
-}
