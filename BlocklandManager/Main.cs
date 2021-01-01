@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
@@ -25,7 +18,6 @@ namespace BlocklandManager
             this.MdiParent = (Form)Container;
         }
         private void button1_Click(object sender, EventArgs e)
-        //opposite of directoryFormDone()
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 nameDirectory = folderBrowserDialog.SelectedPath;   // Storing the value in a temporary string.
@@ -46,11 +38,3 @@ namespace BlocklandManager
         }
     }
 }
-                //else
-                //    {
-                //         MessageBox.Show("This is not a Blockland installation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //         Debug.WriteLine("ERROR - NOT PROPER INSTALLATION");
-                //     }
-                // }
-                // this fucking piece of shit doesn't fucking worse
-                // fuck you visual shitter 2019
