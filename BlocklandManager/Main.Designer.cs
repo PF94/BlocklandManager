@@ -30,6 +30,7 @@
         {
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button1 = new System.Windows.Forms.Button();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -37,18 +38,19 @@
             this.webBrowser1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(178, 41);
+            this.webBrowser1.Location = new System.Drawing.Point(72, 41);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(610, 414);
+            this.webBrowser1.Size = new System.Drawing.Size(610, 356);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("C:\\Source\\source-sdk-2013", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("about:blank", System.UriKind.Absolute);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(678, 12);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(573, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 23);
+            this.button1.Size = new System.Drawing.Size(109, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Change Directory";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,7 +60,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 467);
+            this.ClientSize = new System.Drawing.Size(694, 409);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Main";
@@ -71,6 +73,7 @@
 
         public System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }
 

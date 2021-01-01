@@ -17,6 +17,10 @@ namespace BlocklandManager
             //Directory directoryForm = new Directory();
             //directoryForm.MdiParent = this;
             //directoryForm.Show();
+        }
+
+        private void managerWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Main mainForm = new Main();
             mainForm.MdiParent = this;
             mainForm.Show();
