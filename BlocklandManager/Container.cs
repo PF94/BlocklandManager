@@ -53,5 +53,12 @@ namespace BlocklandManager
             aboutForm.MdiParent = this;
             aboutForm.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Start iconDebug = new Start();
+            iconDebug.MdiParent = this;
+            iconDebug.Show();
+        }
     }
 }
