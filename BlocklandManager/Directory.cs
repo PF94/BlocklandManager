@@ -20,7 +20,7 @@ namespace BlocklandManager
 
         public Directory()
         {
-            InitializeComponent();
+            
         }
         
         private void Browse_Click(object sender, EventArgs e)

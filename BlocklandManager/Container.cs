@@ -25,5 +25,14 @@ namespace BlocklandManager
             mainForm.MdiParent = this;
             mainForm.Show();
         }
+
+        private void blocklandV21SteamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //if (MessageBox.Show("This requires a copy of Blockland to be on your Steam account. If Blockland is already installed, then this will launch Blockland.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+            //{
+            //    System.Diagnostics.Process.Start("steam://run/250340");
+            //}
+            throw new NotImplementedException();
+        }
     }
 }
