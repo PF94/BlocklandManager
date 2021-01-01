@@ -26,6 +26,18 @@ namespace BlocklandManager
             mainForm.Show();
         }
 
+        public string statusText //Does not work.
+        {
+            get
+            {
+                return this.statusBar.Text;
+            }
+            set
+            {
+                this.statusBar.Text = value;
+            }
+        }
+
         private void blocklandV21SteamToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //if (MessageBox.Show("This requires a copy of Blockland to be on your Steam account. If Blockland is already installed, then this will launch Blockland.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
@@ -33,6 +45,13 @@ namespace BlocklandManager
             //    System.Diagnostics.Process.Start("steam://run/250340");
             //}
             throw new NotImplementedException();
+        }
+
+        private void aboutBlocklandManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox aboutForm = new AboutBox();
+            aboutForm.MdiParent = this;
+            aboutForm.Show();
         }
     }
 }

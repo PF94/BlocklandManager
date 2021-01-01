@@ -47,6 +47,8 @@ namespace BlocklandManager
                         else
                         MessageBox.Show("This is not a Blockland installation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Debug.WriteLine("ERROR - INVALID INSTALLATION");
+                        Container conForm = new Container();
+                        conForm.statusBar.Text = "This folder does not contain a Blockland installation.";
                     }
                 }
             }

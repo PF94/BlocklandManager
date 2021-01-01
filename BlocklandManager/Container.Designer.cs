@@ -36,11 +36,17 @@
             this.b4v21LauncherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blocklandV21blocklandusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blocklandV21SteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutBlocklandManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusBar});
             this.statusStrip1.Location = new System.Drawing.Point(0, 596);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(909, 22);
@@ -50,7 +56,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem});
+            this.newToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(909, 24);
@@ -69,7 +76,7 @@
             // managerWindowToolStripMenuItem
             // 
             this.managerWindowToolStripMenuItem.Name = "managerWindowToolStripMenuItem";
-            this.managerWindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.managerWindowToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.managerWindowToolStripMenuItem.Text = "Manager window";
             this.managerWindowToolStripMenuItem.Click += new System.EventHandler(this.managerWindowToolStripMenuItem_Click);
             // 
@@ -102,6 +109,27 @@
             this.blocklandV21SteamToolStripMenuItem.Text = "Blockland v21 (Steam)";
             this.blocklandV21SteamToolStripMenuItem.Click += new System.EventHandler(this.blocklandV21SteamToolStripMenuItem_Click);
             // 
+            // statusBar
+            // 
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(118, 17);
+            this.statusBar.Text = "toolStripStatusLabel1";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutBlocklandManagerToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutBlocklandManagerToolStripMenuItem
+            // 
+            this.aboutBlocklandManagerToolStripMenuItem.Name = "aboutBlocklandManagerToolStripMenuItem";
+            this.aboutBlocklandManagerToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.aboutBlocklandManagerToolStripMenuItem.Text = "About Blockland Manager";
+            this.aboutBlocklandManagerToolStripMenuItem.Click += new System.EventHandler(this.aboutBlocklandManagerToolStripMenuItem_Click);
+            // 
             // Container
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,6 +141,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Container";
             this.Text = "Blockland Manager";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -130,5 +160,8 @@
         private System.Windows.Forms.ToolStripMenuItem b4v21LauncherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blocklandV21blocklandusToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blocklandV21SteamToolStripMenuItem;
+        public System.Windows.Forms.ToolStripStatusLabel statusBar;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutBlocklandManagerToolStripMenuItem;
     }
 }
