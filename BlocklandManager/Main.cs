@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
-using TweakUtility.Helpers;
 
 /// <summary>
 /// The main window for the manager.
@@ -40,7 +39,7 @@ namespace BlocklandManager
                 Debug.WriteLine("Checking file");
             {
                 if (File.Exists(nameDirectory + "\\glu2d3d.dll")) // Checks if the folder has a file only available on v0002 installations. 
-                    //This file is on the B4v21 launcher, which fools BLManager into thinking it's v0002, and thus gives an unrelated error.
+                                                                  //This file is on the B4v21 launcher, which fools BLManager into thinking it's v0002, and thus gives an unrelated error.
                 {
                     MessageBox.Show("This is a Blockland Vanilla installation. Support for Vanilla (v0002) is currently not implemented.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Debug.WriteLine("ERROR - TOO OLD");
@@ -70,7 +69,7 @@ namespace BlocklandManager
                             InitAfterLoad();
                         }
                         else
-                        MessageBox.Show("This is not a Blockland installation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("This is not a Blockland installation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -80,7 +79,7 @@ namespace BlocklandManager
         /// <summary>
         /// Does the same commands for when a v21 client or a B4v21 v20 client is loaded,
         /// </summary>
-        private void InitAfterLoad() 
+        private void InitAfterLoad()
         {
             this.webBrowser1.Navigate(folderBrowserDialog.SelectedPath);
             Explorer_PaintAlt(version);
@@ -103,4 +102,4 @@ namespace BlocklandManager
             //                                                                                                              X  Y  Width Height
         }
     }
-    }
+}
