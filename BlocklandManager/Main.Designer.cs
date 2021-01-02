@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.version = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -58,19 +59,32 @@
             // 
             // version
             // 
+            this.version.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.version.BackColor = System.Drawing.Color.Gray;
             this.version.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.version.ForeColor = System.Drawing.Color.Black;
             this.version.Location = new System.Drawing.Point(628, 41);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(138, 138);
+            this.version.Size = new System.Drawing.Size(203, 60);
             this.version.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(628, 107);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(64, 22);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Play";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 476);
+            this.ClientSize = new System.Drawing.Size(843, 476);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.version);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
@@ -86,6 +100,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
         public System.Windows.Forms.Panel version;
+        private System.Windows.Forms.Button button2;
     }
 }
 
