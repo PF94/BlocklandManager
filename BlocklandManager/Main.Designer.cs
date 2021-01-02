@@ -31,6 +31,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button1 = new System.Windows.Forms.Button();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.version = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -55,11 +56,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // version
+            // 
+            this.version.BackColor = System.Drawing.Color.Gray;
+            this.version.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.version.ForeColor = System.Drawing.Color.Black;
+            this.version.Location = new System.Drawing.Point(628, 41);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(138, 138);
+            this.version.TabIndex = 7;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 476);
+            this.Controls.Add(this.version);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Main";
@@ -73,6 +85,7 @@
         public System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
+        public System.Windows.Forms.Panel version;
     }
 }
 

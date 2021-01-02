@@ -58,8 +58,8 @@
             // statusBar
             // 
             this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(118, 17);
-            this.statusBar.Text = "toolStripStatusLabel1";
+            this.statusBar.Size = new System.Drawing.Size(212, 17);
+            this.statusBar.Text = "Blockland Manager by Chazpelo - 2021";
             // 
             // menuStrip1
             // 
@@ -122,6 +122,7 @@
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
+            this.toolStripMenuItem1.Text = "ICON LOADING TEST";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // helpToolStripMenuItem
